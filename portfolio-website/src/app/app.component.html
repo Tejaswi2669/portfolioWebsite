@@ -1,8 +1,9 @@
 <nav>
-  <a routerLink="/about">About Me</a>
-  <a routerLink="/projects">Projects</a>
-  <a routerLink="/certificates">Certificates</a>
-  <a routerLink="/education">Education</a>
+
+  <a routerLink="/about">{{ 'ABOUT_ME' | translate }}</a>
+  <a routerLink="/projects">{{ 'PROJECTS' | translate }}</a>
+  <a routerLink="/certificates">{{ 'CERTIFICATES' | translate }}</a>
+  <a routerLink="/education">{{ 'EDUCATION' | translate }}</a>
   <select (change)="changeLanguage($event)">
     <option value="en">English</option>
     <option value="it">Italiano</option>
