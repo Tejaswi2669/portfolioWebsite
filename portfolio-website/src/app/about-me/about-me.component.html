@@ -1,4 +1,40 @@
 <div class="about">
-    <h2>About Me</h2>
-    <p>Hi, I'm [Your Name], a passionate software developer...</p>
+    <h2>{{ 'ABOUT_ME' | translate }}</h2>
+    <p>{{ 'ABOUT_ME_SECTION' | translate }}</p>
+  
+    <div class="container">
+      <!-- Content Section -->
+      <div class="section">
+        <h2>{{ 'CAREER_JOURNEY_TITLE' | translate }}</h2>
+        <p>{{ 'CAREER_JOURNEY_CONTENT' | translate }}</p>
+  
+        <p>{{ 'ORACLE_EXPERIENCE' | translate }}</p>
+  
+        <h2>{{ 'FREELANCING_TITLE' | translate }}</h2>
+        <p>{{ 'FREELANCING_CONTENT' | translate }}</p>
+  
+        <h2>{{ 'PROFESSIONAL_SUMMARY_TITLE' | translate }}</h2>
+        <p>{{ 'PROFESSIONAL_SUMMARY_CONTENT' | translate }}</p>
+        <ul>
+          <li>{{ 'TCS_EXPERIENCE' | translate }}</li>
+          <li>{{ 'ORACLE_EXPERIENCE_DURATION' | translate }}</li>
+        </ul>
+        <p>{{ 'JOB_SEEKING' | translate }}</p>
+      </div>
+  
+      <!-- Photo Section -->
+      <div class="photo">
+        <img src="TejuDP.jpg" alt="Lakshmi Tejaswi Nerella" id="profile-photo">
+      </div>
+    </div>
+  
+    <script>
+      // JavaScript to conditionally display the photo section if an image is available
+      window.onload = function() {
+        var img = document.getElementById("profile-photo");
+        if (img.src && img.src !== "your-photo.jpg") {
+          document.querySelector(".photo").style.display = "block";
+        }
+      };
+    </script>
   </div>

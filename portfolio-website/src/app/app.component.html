@@ -3,5 +3,9 @@
   <a routerLink="/projects">Projects</a>
   <a routerLink="/certificates">Certificates</a>
   <a routerLink="/education">Education</a>
+  <select (change)="changeLanguage($event)">
+    <option value="en">English</option>
+    <option value="it">Italiano</option>
+  </select>
 </nav>
 <router-outlet></router-outlet>
