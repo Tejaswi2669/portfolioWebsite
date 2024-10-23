@@ -1,7 +1,10 @@
-<div class="certificates">
-    <h2>Certificates</h2>
-    <ul>
-      <li>Certificate 1: Details...</li>
-      <li>Certificate 2: Details...</li>
-    </ul>
+
+  <div class="certificates">
+    <h2>My Certificates</h2>
+    <div *ngFor="let certificate of certificates" class="certificate">
+      <h3>{{ certificate.title }}</h3>
+      <p>{{ certificate.description }}</p>
+      <a [href]="certificate.link" target="_blank">View Certificate</a>
+    </div>
   </div>
+  
