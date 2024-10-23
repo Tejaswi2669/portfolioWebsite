@@ -13,5 +13,16 @@
   "PROFESSIONAL_SUMMARY_CONTENT": "I bring a total of 4 years of work experience:",
   "TCS_EXPERIENCE": "2 years and 8 months at TCS",
   "ORACLE_EXPERIENCE_DURATION": "1 year and 10 months at Oracle",
-  "JOB_SEEKING": "Since relocating to Milan after getting married, I am actively seeking job opportunities that align with my experience and passion for both data and technology. I am particularly interested in roles that allow me to contribute as a Data Analyst or a Front-End Developer, leveraging my knowledge of Angular and my experience with data-driven solutions."
+  "JOB_SEEKING": "Since relocating to Milan after getting married, I am actively seeking job opportunities that align with my experience and passion for both data and technology. I am particularly interested in roles that allow me to contribute as a Data Analyst or a Front-End Developer, leveraging my knowledge of Angular and my experience with data-driven solutions.",
+  
+  "contactMe": "Contact Me",
+  "notHesitateToContactMe": "Do not hesitate to contact me",
+  "identify": "Name",
+  "enterIdentify": "Enter your full name",
+  "email": "Email",
+  "enterEmail": "Enter your email",
+  "object": "Subject",
+  "enterObject": "Enter subject",
+  "message": "Message",
+  "send": "Send"
 }
