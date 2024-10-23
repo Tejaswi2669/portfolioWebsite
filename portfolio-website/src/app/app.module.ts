@@ -10,6 +10,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CertificatesComponent } from './certificates/certificates.component';
 import { EducationComponent } from './education/education.component';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactmeComponent } from './contactme/contactme.component';
+import { FormsModule } from '@angular/forms';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -21,7 +23,8 @@ const routes: Routes = [
   { path: 'about', component: AboutMeComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'certificates', component: CertificatesComponent },
-  { path: 'education', component: EducationComponent }
+  { path: 'education', component: EducationComponent },
+  { path: 'contactme', component: ContactmeComponent }
 ];
 
 @NgModule({
@@ -30,11 +33,13 @@ const routes: Routes = [
     AboutMeComponent,
     ProjectsComponent,
     CertificatesComponent,
-    EducationComponent
+    EducationComponent,
+    ContactmeComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes),
     TranslateModule.forRoot({
       loader: {

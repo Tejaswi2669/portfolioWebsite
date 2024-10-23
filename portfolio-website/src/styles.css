@@ -1,5 +1,33 @@
 /* You can add global styles to this file, and also import other style files */
 
+.bar-title{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 4px;
+  background: #149ddd;
+
+}
+section{
+  padding-top: 100px;
+}
+h2{
+  color: rgb(22, 59, 90);
+}
+html{scroll-behavior: smooth;}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.mat-radio-button.mat-accent .mat-radio-inner-circle{
+  background-color: #149ddd!important;
+}
+.mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle{
+  border-color: #149ddd!important;
+}
+.mat-radio-outer-circle{
+  border-color: white!important;
+}
 body {
   font-family: 'Arial, sans-serif';
   background-color: #f0f0f0;
@@ -26,16 +54,6 @@ nav a {
 
 nav a:hover {
   color: #61dafb;
-}
-
-div {
-  padding: 40px;
-  max-width: 800px;
-  margin: auto;
-  background: #ffffff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  margin-top: 20px;
 }
 
 h2 {
@@ -91,3 +109,8 @@ ul li:hover {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+
+
+
+  

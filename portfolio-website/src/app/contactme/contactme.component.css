@@ -1,0 +1,69 @@
+/* Contact Component CSS */
+body {
+    background-color: #25274d;
+  }
+  
+  .contact {
+    padding: 4%;
+    height: 400px;
+  }
+  
+  .col-md-3 {
+    background: #1478a7;
+    padding: 4%;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+  
+  .contact-info h4 {
+    margin-top: 10%;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  
+  .col-md-9 {
+    background: #ffffff;
+    padding: 3%;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+  }
+  
+  .contact-form label {
+    font-weight: 600;
+  }
+  
+  .contact-form button {
+    background: #149ddd;
+    color: #ffffff;
+    font-weight: 600;
+    width: 25%;
+  }
+  
+  .contact-form button:focus {
+    box-shadow: none;
+  }
+  
+  section {
+    padding-top: 100px;
+  }
+  
+  h2, h4 {
+    color: #25274d;
+  }
+  
+  .bar-title {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    margin: 20px 0;
+  }
+  .div1 {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    margin-top: 20px;
+  }
