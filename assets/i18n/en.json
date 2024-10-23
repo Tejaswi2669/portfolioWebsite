@@ -24,5 +24,40 @@
   "object": "Subject",
   "enterObject": "Enter subject",
   "message": "Message",
-  "send": "Send"
+  "send": "Send",
+
+  "bloodDonationSystem.title": "Blood Donation Management System",
+  "bloodDonationSystem.description": "A system for managing blood donations, allowing users to register as donors or hospitals. Features include donation tracking, user profiles, and automated email notifications.",
+  "bloodDonationSystem.technologies": "Spring Boot, Angular, PostgreSQL",
+
+  "movieChatbot.title": "Movie Recommendation Chatbot",
+  "movieChatbot.description": "A chatbot that provides personalized theater recommendations based on user preferences and location. The bot collects user inputs, processes them, and offers suggestions.",
+  "movieChatbot.technologies": "JavaScript, Chatbot Frameworks",
+
+  "astrologyApp.title": "Astrology Insights App",
+  "astrologyApp.description": "An astrology app that provides insights based on moon signs. Users select their sign and can request more detailed chart analysis if needed.",
+  "astrologyApp.technologies": "Angular",
+
+  "portfolioWebsite.title": "Personal Portfolio Website",
+  "portfolioWebsite.description": "A personal portfolio website built using Angular, showcasing my skills, projects, and contact information. It’s fully responsive with dynamic content.",
+  "portfolioWebsite.technologies": "Angular",
+  "certificates": {
+    "angular": {
+      "title": "Angular Essential Training",
+      "description": "Solid understanding of Angular for building dynamic web applications. Key skills include components, data binding, directives and pipes, routing and navigation, and HTTP communication."
+    },
+    "powerBI": {
+      "title": "Power BI Essential Training",
+      "description": "Equipped with skills to turn complex data into insightful, actionable reports and dashboards using Microsoft Power BI. Key skills include data import and transformation, data modeling, data visualization, DAX, and dashboard and report design."
+    },
+    "sqlAdvanced": {
+      "title": "SQL (Advanced) Certificate",
+      "description": "Expanding expertise in managing complex databases and executing high-performance queries. Key skills developed include query optimization, advanced joins, subqueries, window functions, stored procedures, functions, triggers, and transactions."
+    },
+    "sqlIntermediate": {
+      "title": "SQL (Intermediate) Certificate",
+      "description": "Enhanced ability to work with complex databases and manage data efficiently. Key skills include advanced querying, data aggregation, database design and normalization, indexes and optimization, and data manipulation."
+    }
+  }
 }
+

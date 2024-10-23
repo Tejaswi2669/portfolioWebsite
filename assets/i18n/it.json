@@ -23,5 +23,38 @@
   "object": "Oggetto",
   "enterObject": "Inserisci l'oggetto",
   "message": "Messaggio",
-  "send": "Invia"
+  "send": "Invia",
+  "bloodDonationSystem.title": "Sistema di Gestione delle Donazioni di Sangue",
+  "bloodDonationSystem.description": "Un sistema per gestire le donazioni di sangue, permettendo agli utenti di registrarsi come donatori o ospedali. Le funzionalità includono il tracciamento delle donazioni, profili utente e notifiche email automatizzate.",
+  "bloodDonationSystem.technologies": "Spring Boot, Angular, PostgreSQL",
+
+  "movieChatbot.title": "Chatbot per Raccomandazioni di Film",
+  "movieChatbot.description": "Un chatbot che fornisce raccomandazioni personalizzate sui cinema in base alle preferenze e alla posizione dell'utente. Il bot raccoglie le informazioni degli utenti, le elabora e offre suggerimenti.",
+  "movieChatbot.technologies": "JavaScript, Framework Chatbot",
+
+  "astrologyApp.title": "App di Approfondimenti Astrologici",
+  "astrologyApp.description": "Un'app di astrologia che fornisce approfondimenti basati sui segni lunari. Gli utenti selezionano il proprio segno e possono richiedere un'analisi più dettagliata della carta, se necessario.",
+  "astrologyApp.technologies": "Angular",
+
+  "portfolioWebsite.title": "Sito Web del Portfolio Personale",
+  "portfolioWebsite.description": "Un sito web del portfolio personale costruito con Angular, che mostra le mie competenze, progetti e informazioni di contatto. È completamente reattivo con contenuti dinamici.",
+  "portfolioWebsite.technologies": "Angular",
+  "certificates": {
+    "angular": {
+      "title": "Formazione Essenziale di Angular",
+      "description": "Solida comprensione di Angular per la costruzione di applicazioni web dinamiche. Le competenze chiave includono componenti, binding dei dati, direttive e pipe, routing e navigazione, e comunicazione HTTP."
+    },
+    "powerBI": {
+      "title": "Formazione Essenziale di Power BI",
+      "description": "Acquisite competenze per trasformare dati complessi in report e dashboard perspicaci e azionabili utilizzando Microsoft Power BI. Le competenze chiave includono importazione e trasformazione dei dati, modellazione dei dati, visualizzazione dei dati, DAX e progettazione di report e dashboard."
+    },
+    "sqlAdvanced": {
+      "title": "Certificato SQL (Avanzato)",
+      "description": "Espansione delle competenze nella gestione di database complessi e nell'esecuzione di query ad alte prestazioni. Le competenze chiave sviluppate includono ottimizzazione delle query, join avanzati, subquery, funzioni di finestra, procedure memorizzate, funzioni, trigger e transazioni."
+    },
+    "sqlIntermediate": {
+      "title": "Certificato SQL (Intermedio)",
+      "description": "Capacità migliorata di lavorare con database complessi e gestire i dati in modo efficiente. Le competenze chiave includono query avanzate, aggregazione dei dati, progettazione e normalizzazione del database, indici e ottimizzazione, e manipolazione dei dati."
+    }
+  }
 }
