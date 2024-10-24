@@ -41,6 +41,11 @@
   "portfolioWebsite.title": "Personal Portfolio Website",
   "portfolioWebsite.description": "A personal portfolio website built using Angular, showcasing my skills, projects, and contact information. It’s fully responsive with dynamic content.",
   "portfolioWebsite.technologies": "Angular",
+  "ecommercePlatform": {
+    "title": "E-Commerce Platform",
+    "description": "This eCommerce platform is a full-stack application developed using Angular for the front-end and Spring Boot for the back-end. It offers a seamless shopping experience for users, featuring a dynamic product catalog, secure payment options, and robust order management.",
+    "technologies": "Angular, Spring Boot, Auth0, Stripe, PostgreSQL"
+  },
   "certificates": {
     "angular": {
       "title": "Angular Essential Training",
@@ -57,6 +62,25 @@
     "sqlIntermediate": {
       "title": "SQL (Intermediate) Certificate",
       "description": "Enhanced ability to work with complex databases and manage data efficiently. Key skills include advanced querying, data aggregation, database design and normalization, indexes and optimization, and data manipulation."
+    }
+  },
+  "education": {
+    "title": "Education",
+    "btech": {
+      "degree": "B.Tech in Computer Science Engineering",
+      "college": "VVIT, affiliated with JNTUK",
+      "location": "Andhra Pradesh, India",
+      "yearsAttended": "2015 - 2019",
+      "focusAreas": "Programming, Data Structures, Databases, Software Engineering",
+      "thesis": "Developed a blood donation management system that allows users to register as blood donors or hospitals. Features included user profiles with donation history, hospital management with filters for donors, and email notifications for donation requests. The system tracked user donations and ensured eligibility for donation based on a 3-month interval."
+    },
+    "juniorCollege": {
+      "degree": "Sri Chaitanya Junior College (+1 and +2)",
+      "location": "Guntur, Andhra Pradesh, India"
+    },
+    "highSchool": {
+      "degree": "Adarsh Public School (High School)",
+      "location": "Macherla, Andhra Pradesh, India"
     }
   }
 }

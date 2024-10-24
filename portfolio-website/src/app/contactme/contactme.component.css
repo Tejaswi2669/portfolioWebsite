@@ -44,7 +44,7 @@ body {
   }
   
   section {
-    padding-top: 100px;
+    padding-top: 50px;
   }
   
   h2, h4 {
@@ -64,6 +64,5 @@ body {
     margin: auto;
     background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  
-    margin-top: 20px;
+    margin-top: 10px;
   }

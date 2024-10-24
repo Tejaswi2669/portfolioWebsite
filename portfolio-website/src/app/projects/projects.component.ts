@@ -19,6 +19,21 @@ export class ProjectsComponent {
   loadProjects() {
   this.projects = [
     {
+      title: this.translate.instant('ecommercePlatform.title'),
+      description: this.translate.instant('ecommercePlatform.description'),
+      technologies: this.translate.instant('ecommercePlatform.technologies'),
+    },
+    {
+      title: this.translate.instant('portfolioWebsite.title'),
+      description: this.translate.instant('portfolioWebsite.description'),
+      technologies: this.translate.instant('portfolioWebsite.technologies'),
+    },
+    {
+      title: this.translate.instant('astrologyApp.title'),
+      description: this.translate.instant('astrologyApp.description'),
+      technologies: this.translate.instant('astrologyApp.technologies'),
+    },
+    {
       title: this.translate.instant('bloodDonationSystem.title'),
       description: this.translate.instant('bloodDonationSystem.description'),
       technologies: this.translate.instant('bloodDonationSystem.technologies'),
@@ -27,16 +42,6 @@ export class ProjectsComponent {
       title: this.translate.instant('movieChatbot.title'),
       description: this.translate.instant('movieChatbot.description'),
       technologies: this.translate.instant('movieChatbot.technologies'),
-    },
-    {
-      title: this.translate.instant('astrologyApp.title'),
-      description: this.translate.instant('astrologyApp.description'),
-      technologies: this.translate.instant('astrologyApp.technologies'),
-    },
-    {
-      title: this.translate.instant('portfolioWebsite.title'),
-      description: this.translate.instant('portfolioWebsite.description'),
-      technologies: this.translate.instant('portfolioWebsite.technologies'),
     }
   ];
   }

@@ -39,6 +39,11 @@
   "portfolioWebsite.title": "Sito Web del Portfolio Personale",
   "portfolioWebsite.description": "Un sito web del portfolio personale costruito con Angular, che mostra le mie competenze, progetti e informazioni di contatto. È completamente reattivo con contenuti dinamici.",
   "portfolioWebsite.technologies": "Angular",
+  "ecommercePlatform": {
+    "title": "Piattaforma E-Commerce",
+    "description": "Questa piattaforma eCommerce è un'applicazione full-stack sviluppata utilizzando Angular per il front-end e Spring Boot per il back-end. Offre un'esperienza di shopping senza soluzione di continuità per gli utenti, con un catalogo prodotti dinamico, opzioni di pagamento sicure e una gestione robusta degli ordini.",
+    "technologies": "Angular, Spring Boot, Auth0, Stripe, PostgreSQL"
+  },
   "certificates": {
     "angular": {
       "title": "Formazione Essenziale di Angular",
@@ -55,6 +60,25 @@
     "sqlIntermediate": {
       "title": "Certificato SQL (Intermedio)",
       "description": "Capacità migliorata di lavorare con database complessi e gestire i dati in modo efficiente. Le competenze chiave includono query avanzate, aggregazione dei dati, progettazione e normalizzazione del database, indici e ottimizzazione, e manipolazione dei dati."
+    }
+  },
+  "education": {
+    "title": "Formazione",
+    "btech": {
+      "degree": "Laurea in Ingegneria Informatica",
+      "college": "VVIT, affiliato a JNTUK",
+      "location": "Andhra Pradesh, India",
+      "yearsAttended": "2015 - 2019",
+      "focusAreas": "Programmazione, Strutture Dati, Database, Ingegneria del Software",
+      "thesis": "Sviluppato un sistema di gestione delle donazioni di sangue che consente agli utenti di registrarsi come donatori di sangue o ospedali. Le funzionalità includevano profili utente con cronologia delle donazioni, gestione degli ospedali con filtri per i donatori e notifiche via e-mail per le richieste di donazione. Il sistema monitorava le donazioni e garantiva l'idoneità alla donazione basata su un intervallo di 3 mesi."
+    },
+    "juniorCollege": {
+      "degree": "Sri Chaitanya Junior College (+1 e +2)",
+      "location": "Guntur, Andhra Pradesh, India"
+    },
+    "highSchool": {
+      "degree": "Scuola Superiore Adarsh Public School",
+      "location": "Macherla, Andhra Pradesh, India"
     }
   }
 }
