@@ -89,3 +89,32 @@ a:hover {
         margin: 20px auto;
     }
 }
+.about-container {
+    text-align: center;
+  }
+  
+  .download-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .download-button button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .download-button button:hover {
+    background-color: #0056b3;
+  }
+  
+  .download-button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  
