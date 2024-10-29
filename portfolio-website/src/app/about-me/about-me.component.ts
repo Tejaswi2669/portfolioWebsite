@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFireAnalytics } from '@angular/fire/compat/analytics';
 
 @Component({
   selector: 'app-about-me',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
+ 
 
   ngOnInit(): void {
   }
 
+  constructor(private analytics: AngularFireAnalytics) {}
+
+  logEvent() {
+    this.analytics.logEvent('button_click', { name: 'download_resume' });
+  }
 }

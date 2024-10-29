@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AngularFireAnalytics } from '@angular/fire/compat/analytics';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -18,4 +19,7 @@ export class AppComponent {
     this.translate.use(selectedLanguage);
     console.log(selectedLanguage);
   }
+
+
+
 }

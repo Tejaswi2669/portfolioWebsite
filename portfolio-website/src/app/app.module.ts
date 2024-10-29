@@ -12,7 +12,9 @@ import { EducationComponent } from './education/education.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ContactmeComponent } from './contactme/contactme.component';
 import { FormsModule } from '@angular/forms';
-
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAnalyticsModule } from '@angular/fire/compat/analytics';
+import { environment } from 'src/environments/environment';
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -40,6 +42,8 @@ const routes: Routes = [
     BrowserModule,
     HttpClientModule,
     FormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireAnalyticsModule ,
     RouterModule.forRoot(routes),
     TranslateModule.forRoot({
       loader: {
