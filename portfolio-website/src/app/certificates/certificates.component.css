@@ -1,9 +1,77 @@
-div {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 20px;
-  }
+.certificates-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.certificates-container h2 {
+  margin-bottom: 30px;
+}
+
+.certificates-grid {
+  display: flex;
+  flex-wrap: wrap;        /* wrap to a new line on smaller screens */
+  gap: 20px;              /* spacing between cards */
+  justify-content: center; 
+}
+
+/* Each card is a square box with a background image */
+.certificate-card {
+  width: 250px;           /* fixed width for the square */
+  height: 250px;          /* same as width => perfect square */
+  background-size: cover; /* fill entire card with the image */
+  background-position: center;
+  border-radius: 8px;
+  position: relative;     /* for overlay positioning */
+  overflow: hidden;       /* hides overlay edges */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.certificate-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay that appears on hover */
+.overlay {
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 50%;                /* overlay covers lower half of the card */
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  /* start hidden: shift below the bottom edge */
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.certificate-card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Overlay text & link */
+.overlay h3 {
+  margin: 0 0 5px 0;
+}
+.overlay p {
+  margin: 5px 0;
+}
+.overlay a {
+  margin-top: 8px;
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.overlay a:hover {
+  text-decoration: none;
+  color: #ddd;
+}

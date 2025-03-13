@@ -1,47 +1,53 @@
-<div class="about">
-    <h2>{{ 'ABOUT_ME' | translate }}</h2>
-    <p>{{ 'ABOUT_ME_SECTION' | translate }}</p>
-  
-      <!-- Content Section -->
-      <div class="section">
-        <h2>{{ 'CAREER_JOURNEY_TITLE' | translate }}</h2>
-        <p>{{ 'CAREER_JOURNEY_CONTENT' | translate }}</p>
-  
-        <p>{{ 'ORACLE_EXPERIENCE' | translate }}</p>
-  
-        <h2>{{ 'FREELANCING_TITLE' | translate }}</h2>
-        <p>{{ 'FREELANCING_CONTENT' | translate }}</p>
-  
-        <h2>{{ 'PROFESSIONAL_SUMMARY_TITLE' | translate }}</h2>
-        <p>{{ 'PROFESSIONAL_SUMMARY_CONTENT' | translate }}</p>
-        <ul>
-          <li>{{ 'TCS_EXPERIENCE' | translate }}</li>
-          <li>{{ 'ORACLE_EXPERIENCE_DURATION' | translate }}</li>
-        </ul>
-        <p>{{ 'JOB_SEEKING' | translate }}</p>
-
-        <div class="download-button">
-          <button class="btn btn-primary"  (click)="logEvent()">
-            <a href="assets/Lakshmi_TejaswiNerella_Resume.pdf" download="Resume_Lakshmi_Nerella.pdf" style="text-decoration: none; color: white;">
-              Download Resume
-            </a>
-          </button>
-        </div>
-
-  
-      <!-- Photo Section -->
+<div class="about-me-container">
+    <!-- Profile Section -->
+    <div class="profile-section">
       <div class="photo">
-        <img src="TejuDP.jpg" alt="Lakshmi Tejaswi Nerella" id="profile-photo">
+        <img src="assets/TejuDP.jpg" alt="Lakshmi Tejaswi Nerella" id="profile-photo">
+      </div>
+      <div class="intro">
+        <h1 style="color: #1abc9c;">{{ 'ABOUT_ME' | translate }}</h1>
+        <p>{{ 'ABOUT_ME_SECTION' | translate }}</p>
       </div>
     </div>
   
-    <script>
-      // JavaScript to conditionally display the photo section if an image is available
-      window.onload = function() {
-        var img = document.getElementById("profile-photo");
-        if (img.src && img.src !== "your-photo.jpg") {
-          document.querySelector(".photo").style.display = "block";
-        }
-      };
-    </script>
+    <!-- Accordion for Career Journey, Freelancing, and Professional Summary -->
+    <div class="accordion-container">
+      <div
+        *ngFor="let sec of sections"
+        class="accordion-item"
+      >
+        <!-- The clickable bar -->
+        <div class="accordion-header" (click)="toggleSection(sec.id)">
+          {{ sec.titleKey | translate }}
+          <span class="arrow" [class.expanded]="expandedSectionId === sec.id">&#9662;</span>
+        </div>
+  
+        <!-- The expanded content (only visible if expandedSectionId === sec.id) -->
+        <div class="accordion-body" [class.show]="expandedSectionId === sec.id">
+          <div *ngFor="let paraKey of sec.paragraphKeys">
+            <p>{{ paraKey | translate }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Resume Download Button -->
+    <div class="download-button">
+      <button class="btn btn-primary" (click)="logEvent()">
+        <a href="assets/Tejaswi Resume.pdf" download="Resume_Lakshmi_Nerella.pdf">
+          {{ 'DOWNLOAD_RESUME' | translate }}
+        </a>
+      </button>
+    </div>
   </div>
+  
+  <script>
+    // Optional: if you want to hide the img container if missing
+    document.addEventListener("DOMContentLoaded", function() {
+      var img = document.getElementById("profile-photo");
+      if (img && img.src && img.src.includes('TejuDP.jpg')) {
+        document.querySelector(".photo").style.display = "block";
+      }
+    });
+  </script>
+  

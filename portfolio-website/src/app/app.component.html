@@ -1,12 +1,21 @@
+
+
 <nav>
-  <a routerLink="/about">{{ 'ABOUT_ME' | translate }}</a>
-  <a routerLink="/projects">{{ 'PROJECTS' | translate }}</a>
-  <a routerLink="/certificates">{{ 'CERTIFICATES' | translate }}</a>
-  <a routerLink="/education">{{ 'EDUCATION' | translate }}</a>
-  <a routerLink="/contactme">{{ 'Contact Me' | translate }}</a>
-  <select (change)="changeLanguage($event)">
-    <option value="en">English</option>
-    <option value="it">Italiano</option>
-  </select>
+  <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+  <ul class="nav-menu" [class.show]="menuOpen">
+    <li><a routerLink="/about">{{ 'ABOUT_ME' | translate }}</a></li>
+    <li><a routerLink="/projects">{{ 'PROJECTS' | translate }}</a></li>
+    <li><a routerLink="/certificates">{{ 'CERTIFICATES' | translate }}</a></li>
+    <li><a routerLink="/education">{{ 'EDUCATION' | translate }}</a></li>
+    <li><a routerLink="/contactme">{{ 'Contact Me' | translate }}</a></li>
+    <li>
+      <!-- Language dropdown -->
+      <select (change)="changeLanguage($event)">
+        <option value="en">English</option>
+        <option value="it">Italiano</option>
+      </select>
+    </li>
+  </ul>
 </nav>
+
 <router-outlet></router-outlet>

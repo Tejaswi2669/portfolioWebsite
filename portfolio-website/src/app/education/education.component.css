@@ -1,9 +1,73 @@
-div {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    margin-top: 20px;
-  }
+.education-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.education-container h1 {
+  margin-bottom: 30px;
+}
+
+/* The grid that holds our education cards */
+.education-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each card is a square with a background image */
+.education-card {
+  width: 250px;          /* forces a square shape */
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  position: relative;    /* for overlay positioning */
+  overflow: hidden;      /* hides overlay edges */
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Overlay that appears on hover */
+.overlay {
+  position: absolute;
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  height: 60%;           /* overlay covers 60% of the card from the bottom */
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+  /* Start hidden (shift below the bottom) */
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover .overlay {
+  transform: translateY(0);
+}
+
+/* Style the text inside the overlay */
+.overlay h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.overlay p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+}

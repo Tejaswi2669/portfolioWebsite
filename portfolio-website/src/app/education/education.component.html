@@ -1,18 +1,30 @@
-<div class="education">
-  <div id="education" class="tab-content">
-    <h1>{{ 'education.title' | translate }}</h1>
+<div class="education-container">
+  <h1>{{ 'education.title' | translate }}</h1>
 
-    <h2>{{ 'education.btech.degree' | translate }}</h2>
-    <p><strong>{{ 'College' | translate }}:</strong> {{ 'education.btech.college' | translate }}</p>
-    <p><strong>{{ 'Location' | translate }}:</strong> {{ 'education.btech.location' | translate }}</p>
-    <p><strong>{{ 'Years Attended' | translate }}:</strong> {{ 'education.btech.yearsAttended' | translate }}</p>
-    <p><strong>{{ 'Focus Areas' | translate }}:</strong> {{ 'education.btech.focusAreas' | translate }}</p>
-    <p><strong>{{ 'Thesis' | translate }}:</strong> {{ 'education.btech.thesis' | translate }}</p>
+  <div class="education-grid">
+    <!-- Loop over educationData to create each card -->
+    <div
+      class="education-card"
+      *ngFor="let edu of educationData"
+      [style.backgroundImage]="'url(' + edu.image + ')'"
+    >
+      <!-- Overlay that appears on hover -->
+      <div class="overlay">
+        <h2>{{ edu.degree }}</h2>
 
-    <h2>{{ 'education.juniorCollege.degree' | translate }}</h2>
-    <p><strong>{{ 'Location' | translate }}:</strong> {{ 'education.juniorCollege.location' | translate }}</p>
-
-    <h2>{{ 'education.highSchool.degree' | translate }}</h2>
-    <p><strong>{{ 'Location' | translate }}:</strong> {{ 'education.highSchool.location' | translate }}</p>
+        <!-- Show details that exist for this entry -->
+        <p *ngIf="edu.college">
+          <strong>{{ 'College' | translate }}:</strong> {{ edu.college }}
+        </p>
+        <p *ngIf="edu.location">
+          <strong>{{ 'Location' | translate }}:</strong> {{ edu.location }}
+        </p>
+        <p *ngIf="edu.yearsAttended">
+          <strong>{{ 'Years Attended' | translate }}:</strong> {{ edu.yearsAttended }}
+        </p>
+        
+       
+      </div>
+    </div>
   </div>
 </div>

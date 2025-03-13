@@ -1,10 +1,20 @@
+<div class="certificates-container">
+  <br>
+  <h2>{{ 'CERTIFICATES' | translate }}</h2>
 
-  <div class="certificates">
-    <h2>My Certificates</h2>
-    <div *ngFor="let certificate of certificates" class="certificate">
-      <h3>{{ certificate.title }}</h3>
-      <p>{{ certificate.description }}</p>
-      <a [href]="certificate.link" target="_blank">View Certificate</a>
+  <div class="certificates-grid">
+    <div
+      class="certificate-card"
+      *ngFor="let certificate of certificates"
+      [style.backgroundImage]="'url(' + certificate.image + ')'"
+    >
+      <!-- Overlay that appears on hover -->
+      <div class="overlay">
+        <h4>{{ certificate.title }}</h4>
+        <a [href]="certificate.link" target="_blank" rel="noopener noreferrer">
+          {{ 'VIEW_CERTIFICATE' | translate }}
+        </a>
+      </div>
     </div>
   </div>
-  
+</div>

@@ -8,6 +8,17 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title = 'portfolio-website'; 
+
+
+ // 1) A boolean that tracks whether the menu is open
+ menuOpen: boolean = false;  
+
+ // 2) A method that toggles the menu
+ toggleMenu() {
+   this.menuOpen = !this.menuOpen; 
+ }
+
   constructor(private translate: TranslateService) {
     translate.addLangs(['en', 'it']);
     translate.setDefaultLang('en');
